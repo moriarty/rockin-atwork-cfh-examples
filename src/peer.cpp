@@ -90,7 +90,7 @@ class ExamplePeer
 };
 
 int main(int argc, char **argv) {
-  ExamplePeer peer("127.0.0.1", 4444);
+  ExamplePeer peer("192.168.1.100", 4444);
   while (true) usleep(100000);
 }
 
