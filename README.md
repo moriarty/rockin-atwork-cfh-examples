@@ -21,4 +21,11 @@ From inside the build directory:
 
     ./peer
 
+NOTES
+---
+
+Currently libs/protobuf_comm and protobuf/msgs are manually copied from the upstream rockin-refbox. 
+They are not guarenteed to be up to date. Please ensure to check with the upstream repositories for changes before 
+competitions. In the future these may be included as external CMake projects or git submodules. 
+
 
