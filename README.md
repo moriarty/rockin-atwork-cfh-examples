@@ -1,5 +1,14 @@
 # rockin-atwork-cfh-examples
 
+This repository holds standalone examples for communicating with the RoCKIn-at-Work Central Factory Hub (CFH).
+
+The CFH code repository is located here: https://github.com/mas-group/rockin-refbox
+
+
+
+Instructions
+---
+
 First modify src/peer.cpp, replacing the IP address with your local IP address. 
 
 TO MAKE
