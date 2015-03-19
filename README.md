@@ -14,7 +14,17 @@ First modify src/peer.cpp, replacing the IP address with your local IP address.
 TO MAKE
 ---
 
-First clone the repository, then:
+First clone the repository:
+
+    git clone https://github.com/moriarty/rockin-atwork-cfh-examples
+
+Now initialize and update the submodule, this gets the central factory hub itself:
+
+    cd rockin-atwork-cfh-examples
+    git submodule init
+    git submodule update
+
+Now do the usual cmake:
 
     mkdir build
     cd build
