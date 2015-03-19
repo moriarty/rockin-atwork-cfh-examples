@@ -114,7 +114,9 @@ class ExamplePeer
 
 int main(int argc, char **argv) {
   ExamplePeer peer("192.168.1.100", 4444, 4446);
-  peer.send_beacon_signal();
-  while (true) usleep(100000);
+  while (true) {
+    peer.send_beacon_signal();
+    usleep(100000);
+  }
 }
 
