@@ -113,7 +113,7 @@ class ExamplePeer
 };
 
 int main(int argc, char **argv) {
-  ExamplePeer peer("192.168.1.100", 4444, 4446);
+  ExamplePeer peer("192.168.1.100", 4444, PRIVATE_PORT);
   while (true) {
     peer.send_beacon_signal();
     usleep(100000);
