@@ -27,7 +27,8 @@
  */
 
 #include <protobuf_comm/peer.h>
-#include <msgs/BeaconSignal.pb.h>
+//#include <cfh_msgs/BeaconSignal.pb.h>
+#include "cfh_msgs.h"
 
 using namespace protobuf_comm;
 

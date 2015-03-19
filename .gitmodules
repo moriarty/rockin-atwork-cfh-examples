@@ -1,0 +1,4 @@
+[submodule "cfh"]
+	path = rockin-cfh
+	url = https://github.com/mas-group/rockin-refbox
+	branch = rockin2015
