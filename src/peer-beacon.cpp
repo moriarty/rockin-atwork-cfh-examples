@@ -56,15 +56,18 @@ class ExamplePeer
   {
     std::shared_ptr<rockin_msgs::BeaconSignal> signal(new rockin_msgs::BeaconSignal());
 
-    rockin_msgs::Time *time = signal->mutable_time();
+    // Get the current time of the peer
     boost::posix_time::ptime now(boost::posix_time::microsec_clock::universal_time());
     boost::posix_time::time_duration since_epoch = now - boost::posix_time::from_time_t(0);
 
+    // Add a timestamp to the signal
+    rockin_msgs::Time *time = signal->mutable_time();
     time->set_sec(static_cast<google::protobuf::int64>(since_epoch.total_seconds()));
     time->set_nsec(
       static_cast<google::protobuf::int64>(since_epoch.fractional_seconds() * 
              (1000000000/since_epoch.ticks_per_second())));
 
+    // Add the robot's name, peer name and a sequence number to the signal
     signal->set_peer_name(ROBOT_NAME);
     signal->set_team_name(TEAM_NAME);
     signal->set_seq(++sequence_number_);
